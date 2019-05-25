@@ -14,16 +14,16 @@ public class Checker {
         for(int i = 0; i < arrCheck.length; i ++){
             for (int j = 0; j < arrOriginal.length; j++){
                 
-                //System.out.println(arrCheck[i].trim());
-                //System.out.println(arrOriginal[j].trim());
+                System.out.println(arrCheck[i].trim());
+                System.out.println(arrOriginal[j].trim());
                 
                 if (arrCheck[i].trim().equalsIgnoreCase(arrOriginal[j].trim())){
                     count ++;
                 }        
             }
         }
-        //System.out.println(count);
-        //System.out.println((count/arrCheck.length) * 100);
+        System.out.println(count);
+        System.out.println((count/arrCheck.length) * 100);
         return  (count/arrCheck.length) * 100;
     }
 }
